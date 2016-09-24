@@ -1,0 +1,5 @@
+<template name="carousel">
+  <view class="carousel">
+     <image class="carouselImage" src="{{url}}" mode="top left"></image>
+  </view>
+</template>

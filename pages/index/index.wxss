@@ -1,21 +1,32 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container {
+  display: initial;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+/**templates**/
+
+.carouselImage {
+  height: 290rpx;
+  width: 100%;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+/****/
+
+.head {
+  background: red;
+  min-height: 300rpx;
+  max-height: 300rpx;
+  padding: 20rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+.body {
+  width: 100%;
+  height: 100%;
+  background: orange;
+
+}
+
+.test {
+  height: 200rpx;
+  background: yellow;
 }

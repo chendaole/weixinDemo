@@ -1,10 +1,27 @@
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<scroll-view class="container">
+  <view class="head">
+    <import src="/templates/carousel.wxml"/>
+    <template is="carousel" data="{{...carousel}}"/>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+  <scroll-view class="body" scroll-y>
+    <view class="test">
+       <text>body</text>
+    </view>
+        <view class="test">
+       <text>body</text>
+    </view>
+        <view class="test">
+       <text>body</text>
+    </view>
+        <view class="test">
+       <text>body</text>
+    </view>
+        <view class="test">
+       <text>body</text>
+    </view>
+        <view class="test">
+       <text>body</text>
+    </view>
+  </scroll-view>
+</scroll-view>
