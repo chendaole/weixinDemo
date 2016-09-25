@@ -1,14 +1,6 @@
 //index.js
 //获取应用实例
-var app = getApp()
-const imagesUrls = [{
-  url: "/images/carousel-A.png" 
-}, {
-  url: "/images/carousel-B.png",
-}, {
-  url: "/images/carousel-C.png" 
-}];
-
+var netApi = require('../../utils/netApi.js')
 Page({
   data:{
     carousel : {
@@ -17,13 +9,24 @@ Page({
       interval : 5000,
       duration: 1000,
       imageUrls:[]
-    }
+    },
+    newsCards: {}
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
-    this.setData({ carousel: { imageUrls : imagesUrls } });
+    let home = {
+        carousel: null,
+        newsCards: null
+    };
+    netApi.getCarouselData( result => {
+       home.carousel = result;
+    })
+    netApi.getNewsCards( result => {
+       home.newsCards = result;
+    });
+    this.setData({ carousel: { imageUrls : home.carousel.imageUrls }, newsCards: home.newsCards});
   },
-  onReady:function(){
+  onReady:function() {
     // 页面渲染完成
   },
   onShow:function(){
@@ -35,4 +38,4 @@ Page({
   onUnload:function(){
     // 页面关闭
   }
-})
+});

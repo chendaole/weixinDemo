@@ -5,23 +5,7 @@
     <template is="carousel" data="{{...carousel}}"/>
   </view>
   <scroll-view class="body" scroll-y>
-    <view class="test">
-       <text>body</text>
-    </view>
-        <view class="test">
-       <text>body</text>
-    </view>
-        <view class="test">
-       <text>body</text>
-    </view>
-        <view class="test">
-       <text>body</text>
-    </view>
-        <view class="test">
-       <text>body</text>
-    </view>
-        <view class="test">
-       <text>body</text>
-    </view>
+    <import src="/templates/newsCard.wxml" />
+    <template is="newsCard" data="{{...newsCards}}"/> 
   </scroll-view>
 </scroll-view>

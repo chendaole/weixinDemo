@@ -1,0 +1,16 @@
+<template name="newsCard">
+  <view class="newsCard">
+     <view class="newsCard-body">
+       <text class="newsCard-title">{{title}}</text>
+       <image src="{{url}}"></image>
+     </view>
+     <view class="newsCard-footer">
+       <view>
+         <image src="{{footer.iconUrl}}"></image>
+         <text>{{footer.from}}</text>
+         <text>{{footer.title}}</text>
+         <image src="{{footer.hotspot}}"></image>
+       </view>
+     </view>
+  </view>
+</template>
