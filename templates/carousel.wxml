@@ -1,5 +1,13 @@
 <template name="carousel">
-  <view class="carousel">
-     <image class="carouselImage" src="{{url}}" mode="top left"></image>
-  </view>
+  <swiper class="carousel" 
+          indicator-dots="{{indicatorDots}}" 
+          autoplay="{{autoplay}}"
+          interval="{{interval}}" 
+          duration="{{duration}}">
+     <block wx:for="{{imageUrls}}">
+        <swiper-item>
+            <image class="carouselImage" src="{{item.url}}" ></image>
+        </swiper-item>
+     </block>
+  </swiper>
 </template>

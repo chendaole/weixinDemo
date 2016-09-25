@@ -1,27 +1,29 @@
 //index.js
 //获取应用实例
 var app = getApp()
-const imagesUrl = [
-  "/images/carousel-A.png",
-  "/images/carousel-B.png",
-  "/images/carousel-C.png"
-]
+const imagesUrls = [{
+  url: "/images/carousel-A.png" 
+}, {
+  url: "/images/carousel-B.png",
+}, {
+  url: "/images/carousel-C.png" 
+}];
+
 Page({
   data:{
     carousel : {
-      urlIndex: 0,
-      url: imagesUrl[0]
+      indicatorDots: true,
+      autoplay: true,
+      interval : 5000,
+      duration: 1000,
+      imageUrls:[]
     }
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
+    this.setData({ carousel: { imageUrls : imagesUrls } });
   },
   onReady:function(){
-    setInterval(() => {
-      const imagesLength = imagesUrl.length;
-      const urlIndex  = this.data.carousel.urlIndex + 1 > imagesLength ? 0 : this.data.carousel.urlIndex + 1;
-      this.setData({carousel:{urlIndex: urlIndex, url: imagesUrl[urlIndex]}});
-    }, 2 * 1000);
     // 页面渲染完成
   },
   onShow:function(){

@@ -6,7 +6,7 @@
 /**templates**/
 
 .carouselImage {
-  height: 290rpx;
+  height: 100%;
   width: 100%;
 }
 
