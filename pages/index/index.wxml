@@ -1,11 +1,13 @@
 <!--index.wxml-->
 <scroll-view class="container">
-  <view class="head">
+  <scroll-view class="body" scroll-y="{{true}}">
     <import src="/templates/carousel.wxml"/>
-    <template is="carousel" data="{{...carousel}}"/>
-  </view>
-  <scroll-view class="body" scroll-y>
     <import src="/templates/newsCard.wxml" />
-    <template is="newsCard" data="{{...newsCards}}"/> 
+    <view class="newsHead">
+       <template is="carousel" data="{{...carousel}}"/>     
+    </view>
+    <block wx:for="{{newsCards}}">
+      <template is="newsCard" data="{{...item}}"/> 
+    </block>
   </scroll-view>
 </scroll-view>

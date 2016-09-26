@@ -2,14 +2,14 @@
   <view class="newsCard">
      <view class="newsCard-body">
        <text class="newsCard-title">{{title}}</text>
-       <image src="{{url}}"></image>
+       <image src="{{url}}" mode="top" style="height: 150rpx"></image>
      </view>
      <view class="newsCard-footer">
        <view>
-         <image src="{{footer.iconUrl}}"></image>
-         <text>{{footer.from}}</text>
-         <text>{{footer.title}}</text>
-         <image src="{{footer.hotspot}}"></image>
+         <image src="{{footer.iconUrl}}" mode="scaleToFill" style="height: 10rpx; width: 20rpx"></image>
+         <text>来自：{{footer.from}}</text>
+         <text>时间：{{footer.time}}</text>
+         <text>热度：{{footer.hotspot}}</text>
        </view>
      </view>
   </view>

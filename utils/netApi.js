@@ -1,6 +1,10 @@
 /******simulatin********/
 var simulation = {
    "carousel" : {
+       "indicatorDots": true,
+       "autoplay": true,
+       "interval" : 2000,
+       "duration": 1000,
        "imageUrls": [{
             "url": "/images/carousel-A.png" 
         }, {
@@ -9,16 +13,43 @@ var simulation = {
          "url": "/images/carousel-C.png" 
         }]
     },
-   "newsCard" : {
-     "title" : '测试测试',
+   "newsCard" : [{
+     "title" : '新闻标题',
      "url" : "/images/carousel-B.png",
       "footer" : {
           "iconUrl" : "",
           "from": "中国",
-          "title" :　"ceshi",
-          "hotspot" : "2"
+          "time" :　"2016/5/21",
+          "hotspot" : "100%"
       }
-   }
+   },{
+     "title" : '新闻标题',
+     "url" : "/images/carousel-B.png",
+      "footer" : {
+          "iconUrl" : "",
+          "from": "中国",
+          "time" :　"2016/5/21",
+          "hotspot" : "100%"
+      }
+   },{
+     "title" : '新闻标题',
+     "url" : "/images/carousel-B.png",
+      "footer" : {
+          "iconUrl" : "",
+          "from": "中国",
+          "time" :　"2016/5/21",
+          "hotspot" : "100%"
+      }
+   },{
+     "title" : '新闻标题',
+     "url" : "/images/carousel-B.png",
+      "footer" : {
+          "iconUrl" : "",
+          "from": "中国",
+          "time" :　"2016/5/21",
+          "hotspot" : "100%"
+      }
+   }]
 };
 
 var apiKey = "";

@@ -6,25 +6,22 @@ Page({
     carousel : {
       indicatorDots: true,
       autoplay: true,
-      interval : 5000,
+      interval : 2000,
       duration: 1000,
       imageUrls:[]
     },
-    newsCards: {}
+    newsCards: []
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
-    let home = {
-        carousel: null,
-        newsCards: null
-    };
+    let homeData = this.data;
     netApi.getCarouselData( result => {
-       home.carousel = result;
+       homeData.carousel = result;
     })
     netApi.getNewsCards( result => {
-       home.newsCards = result;
+       homeData.newsCards = result;
     });
-    this.setData({ carousel: { imageUrls : home.carousel.imageUrls }, newsCards: home.newsCards});
+    this.setData({ carousel: homeData.carousel, newsCards: homeData.newsCards});
   },
   onReady:function() {
     // 页面渲染完成
