@@ -10,4 +10,10 @@
       <template is="newsCard" data="{{...item}}"/> 
     </block>
   </scroll-view>
+  <action-sheet hidden="{{sheet.hidden}}" bindchange="handleSheetChange">
+    <view>qq空间</view>
+    <view>微信</view>
+    <view>微博</view>
+    <action-sheet-cancel  >取消</action-sheet-cancel>
+  </action-sheet>
 </scroll-view>

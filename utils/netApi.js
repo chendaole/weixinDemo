@@ -14,6 +14,7 @@ var simulation = {
         }]
     },
    "newsCard" : [{
+     "key": "123955245", 
      "title" : '新闻标题',
      "url" : "/images/carousel-B.png",
       "footer" : {
@@ -23,6 +24,7 @@ var simulation = {
           "hotspot" : "100%"
       }
    },{
+     "key" : "fddsf455455",  
      "title" : '新闻标题',
      "url" : "/images/carousel-B.png",
       "footer" : {
@@ -32,6 +34,7 @@ var simulation = {
           "hotspot" : "100%"
       }
    },{
+     "key" : "dffd44545",  
      "title" : '新闻标题',
      "url" : "/images/carousel-B.png",
       "footer" : {
@@ -41,6 +44,7 @@ var simulation = {
           "hotspot" : "100%"
       }
    },{
+     "key" : "fdasdfd45452",  
      "title" : '新闻标题',
      "url" : "/images/carousel-B.png",
       "footer" : {

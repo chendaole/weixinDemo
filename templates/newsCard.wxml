@@ -5,12 +5,11 @@
        <image src="{{url}}" mode="top" style="height: 150rpx"></image>
      </view>
      <view class="newsCard-footer">
-       <view>
          <image src="{{footer.iconUrl}}" mode="scaleToFill" style="height: 10rpx; width: 20rpx"></image>
          <text>来自：{{footer.from}}</text>
          <text>时间：{{footer.time}}</text>
          <text>热度：{{footer.hotspot}}</text>
-       </view>
+         <icon class="share" type="info" size="23" data-key="{{key}}" catchtap="handleShareTap">分享</icon>
      </view>
   </view>
 </template>
