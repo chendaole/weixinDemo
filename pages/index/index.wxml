@@ -1,6 +1,19 @@
 <!--index.wxml-->
-<scroll-view class="container">
-  <scroll-view class="body" scroll-y="{{true}}">
+<view>
+  <loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>
+  <view class="head" catchtouchmove="handleheadmove">
+    <view>
+      <text>今日头条</text>
+      <input placeholder="搜索"/>
+    </view>
+    <view>
+       option --- build
+    </view>
+  </view>
+  <scroll-view class="container" cathtouchmove="">
+    <scroll-view class="body" scroll-y="{{true}}">
     <import src="/templates/carousel.wxml"/>
     <import src="/templates/newsCard.wxml" />
     <view class="newsHead">
@@ -9,11 +22,12 @@
     <block wx:for="{{newsCards}}">
       <template is="newsCard" data="{{...item}}"/> 
     </block>
-  </scroll-view>
-  <action-sheet hidden="{{sheet.hidden}}" bindchange="handleSheetChange">
-    <view>qq空间</view>
-    <view>微信</view>
-    <view>微博</view>
-    <action-sheet-cancel  >取消</action-sheet-cancel>
-  </action-sheet>
-</scroll-view>
+    </scroll-view>
+      <action-sheet hidden="{{sheet.hidden}}" bindchange="handleSheetChange">
+        <view>qq空间</view>
+        <view>微信</view>
+        <view>微博</view>
+        <action-sheet-cancel  >取消</action-sheet-cancel>
+      </action-sheet>
+   </scroll-view>
+</view>

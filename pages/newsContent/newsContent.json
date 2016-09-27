@@ -1,0 +1,8 @@
+{
+    "window" : {
+       "backgroundTextStyle":"light",
+       "navigationBarBackgroundColor": "#fff",
+       "navigationBarTitleText": "Demo",
+       "navigationBarTextStyle":"black"
+    }
+}

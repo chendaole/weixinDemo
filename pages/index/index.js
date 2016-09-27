@@ -1,8 +1,10 @@
 //index.js
 //获取应用实例
-var netApi = require('../../utils/netApi.js')
+var netApi = require('../../utils/netApi.js');
+var app = getApp();
 Page({
   data:{
+    hidden : false,
     carousel : {
       indicatorDots: true,
       autoplay: true,
@@ -16,6 +18,7 @@ Page({
     }
   },
   onLoad:function(options){
+    
     // 页面初始化 options为页面跳转所带来的参数
     let homeData = this.data;
     netApi.getCarouselData( result => {
@@ -28,6 +31,12 @@ Page({
   },
   onReady:function() {
     // 页面渲染完成
+      wx.setNavigationBarTitle({
+      title : "主页"
+    });
+    this.setData({
+      hidden : true
+    })
   },
   onShow:function(){
     // 页面显示
@@ -43,5 +52,7 @@ Page({
   },
   handleSheetChange : function(){
      this.setData({sheet: {hidden: true}});
+  },
+  handleheadmove : function() {
   }
 });

@@ -3,6 +3,11 @@
   display: initial;
 }
 
+.head {
+  display: flex;
+  flex-direction: column;
+}
+
 /**templates**/
 
 .carouselImage {

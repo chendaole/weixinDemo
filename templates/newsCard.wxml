@@ -1,9 +1,9 @@
 <template name="newsCard">
   <view class="newsCard">
-     <view class="newsCard-body">
+     <navigator class="newsCard-body" url="/pages/newsContent/newsContent">
        <text class="newsCard-title">{{title}}</text>
        <image src="{{url}}" mode="top" style="height: 150rpx"></image>
-     </view>
+     </navigator>
      <view class="newsCard-footer">
          <image src="{{footer.iconUrl}}" mode="scaleToFill" style="height: 10rpx; width: 20rpx"></image>
          <text>来自：{{footer.from}}</text>
