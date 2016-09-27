@@ -1,11 +1,33 @@
 /**index.wxss**/
 .container {
-  display: initial;
+  
 }
 
 .head {
   display: flex;
   flex-direction: column;
+}
+
+.headTop {
+  display: flex;
+  flex-direction: row;
+  background: red;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.headHomeSearch {
+  height: 35rpx;
+  width: 600rpx;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: black;
+  background-color: white;
+  margin: 15rpx 30rpx 15rpx 0rpx;
+}
+
+.headHomeLogo {
+  margin: 15rpx 30rpx;
 }
 
 /**templates**/

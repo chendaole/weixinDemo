@@ -1,18 +1,18 @@
 <!--index.wxml-->
-<view>
+<scroll-view calss="container" >
   <loading hidden="{{hidden}}" bindchange="loadingChange">
     加载中...
   </loading>
   <view class="head" catchtouchmove="handleheadmove">
-    <view>
-      <text>今日头条</text>
-      <input placeholder="搜索"/>
+    <view class="headTop">
+      <image class="headHomeLogo" src="/images/home_logo.png" mode="scaleToFill" style="width: 200rpx; height: 45rpx;"></image>
+      <input class="headHomeSearch" placeholder="搜索"/>
     </view>
     <view>
        option --- build
     </view>
   </view>
-  <scroll-view class="container" cathtouchmove="">
+  <scroll-view>
     <scroll-view class="body" scroll-y="{{true}}">
     <import src="/templates/carousel.wxml"/>
     <import src="/templates/newsCard.wxml" />
@@ -30,4 +30,4 @@
         <action-sheet-cancel  >取消</action-sheet-cancel>
       </action-sheet>
    </scroll-view>
-</view>
+</scroll-view>
