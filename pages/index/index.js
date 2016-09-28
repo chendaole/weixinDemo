@@ -5,6 +5,7 @@ var app = getApp();
 Page({
   data:{
     hidden : false,
+    category: [],
     carousel : {
       indicatorDots: true,
       autoplay: true,
@@ -27,7 +28,10 @@ Page({
     netApi.getNewsCards( result => {
        homeData.newsCards = result;
     });
-    this.setData({ carousel: homeData.carousel, newsCards: homeData.newsCards});
+    netApi.getHomeCategory( result =>　{
+      homeData.category = result;
+    });
+    this.setData({ category: homeData.category, carousel: homeData.carousel, newsCards: homeData.newsCards});
   },
   onReady:function() {
     // 页面渲染完成
@@ -40,6 +44,7 @@ Page({
   },
   onShow:function(){
     // 页面显示
+    console.log(this.data);
   },
   onHide:function(){
     // 页面隐藏

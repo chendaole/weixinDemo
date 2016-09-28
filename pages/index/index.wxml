@@ -11,18 +11,9 @@
       </navigator>
     </view>
     <scroll-view class="headBottom" scroll-x="true">
-       <view class="item_H">科技</view>
-       <view class="item_H">生活</view>
-       <view class="item_H">娱乐</view>
-       <view class="item_H">厦门</view>
-       <view class="item_H">科技</view>
-       <view class="item_H">生活</view>
-       <view class="item_H">娱乐</view>
-       <view class="item_H">厦门</view>
-       <view class="item_H">科技</view>
-       <view class="item_H">生活</view>
-       <view class="item_H">娱乐</view>
-       <view class="item_H">厦门</view>
+       <block wx:for="{{category}}" >
+          <view id="{{item.id}}" class="item_H">{{item.name}}</view>
+       </block>
     </scroll-view>
   </view>
   <scroll-view>
