@@ -53,7 +53,16 @@ var simulation = {
           "time" :　"2016/5/21",
           "hotspot" : "100%"
       }
-   }]
+   }],
+   "category": [
+       {"name": "科技", "id": 1242},
+       {"name": "娱乐", "id": 1242},
+       {"name": "美图", "id": 1242},
+       {"name": "事实", "id": 1242},
+       {"name": "游戏", "id": 1242},
+       {"name": "生活", "id": 1242},
+       {"name": "厦门", "id": 1242},
+   ]
 };
 
 var apiKey = "";
@@ -100,6 +109,9 @@ var netApi = {
    },
    getNewsCards : function(callback) {
         callback && callback(simulation.newsCard);
+   },
+   getHomeCategory : function(callback) {
+       callback && callback(simulation.category);
    },
    getother : function() {
        

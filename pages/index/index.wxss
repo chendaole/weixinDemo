@@ -1,8 +1,7 @@
 /**index.wxss**/
-.container {
-  
+page {
+  overflow: hidden;
 }
-
 .head {
   display: flex;
   flex-direction: column;
@@ -16,18 +15,35 @@
   align-items: center;
 }
 
-.headHomeSearch {
-  height: 35rpx;
+.headHomeSearch-borad {
+  display: block;
+  height: 60rpx;
   width: 600rpx;
+  color: black;
+  margin: 15rpx 30rpx 15rpx 0rpx;
+}
+
+.headHomeSearch {
   border: 1px solid white;
   border-radius: 3px;
   color: black;
   background-color: white;
-  margin: 15rpx 30rpx 15rpx 0rpx;
 }
 
 .headHomeLogo {
   margin: 15rpx 30rpx;
+}
+
+.headBottom {
+  display: block;
+  white-space: nowrap;
+  height: 50rpx;
+}
+
+.item_H {
+  display: inline-block;
+  width: 80rpx;
+  height: 44rpx;
 }
 
 /**templates**/

@@ -1,16 +1,29 @@
 <!--index.wxml-->
-<scroll-view calss="container" >
+<view calss="container">
   <loading hidden="{{hidden}}" bindchange="loadingChange">
     加载中...
   </loading>
-  <view class="head" catchtouchmove="handleheadmove">
+  <view class="head">
     <view class="headTop">
       <image class="headHomeLogo" src="/images/home_logo.png" mode="scaleToFill" style="width: 200rpx; height: 45rpx;"></image>
-      <input class="headHomeSearch" placeholder="搜索"/>
+      <navigator class="headHomeSearch-borad" url="/pages/search/search">
+         <input class="headHomeSearch" placeholder="搜索"/>
+      </navigator>
     </view>
-    <view>
-       option --- build
-    </view>
+    <scroll-view class="headBottom" scroll-x="true">
+       <view class="item_H">科技</view>
+       <view class="item_H">生活</view>
+       <view class="item_H">娱乐</view>
+       <view class="item_H">厦门</view>
+       <view class="item_H">科技</view>
+       <view class="item_H">生活</view>
+       <view class="item_H">娱乐</view>
+       <view class="item_H">厦门</view>
+       <view class="item_H">科技</view>
+       <view class="item_H">生活</view>
+       <view class="item_H">娱乐</view>
+       <view class="item_H">厦门</view>
+    </scroll-view>
   </view>
   <scroll-view>
     <scroll-view class="body" scroll-y="{{true}}">
@@ -30,4 +43,4 @@
         <action-sheet-cancel  >取消</action-sheet-cancel>
       </action-sheet>
    </scroll-view>
-</scroll-view>
+</view>
