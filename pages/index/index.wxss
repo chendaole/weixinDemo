@@ -1,4 +1,5 @@
 /**index.wxss**/
+@import "/templates/newsCard.wxss";
 page {
   overflow: hidden;
 }
@@ -48,15 +49,6 @@ page {
   margin: 5rpx 10rpx 5rpx 10rpx;
 }
 
-/**templates**/
-
-.carouselImage {
-  height: 100%;
-  width: 100%;
-}
-
-/****/
-
 .newsHead {
   background: red;
   min-height: 300rpx;
@@ -71,6 +63,18 @@ page {
 
 }
 
+.share {
+  width: 20rpx;
+  height: 20rpx;
+}
+/**templates-carousel**/
+
+.carouselImage {
+  height: 100%;
+  width: 100%;
+}
+
+/**templates-card**/
 .newsCard {
    display: flex;
    flex-direction: column;
@@ -83,18 +87,14 @@ page {
 }
 
 .newsCard-body { 
-   display: flex;
-   flex-direction: column;
-   align-content: center;
+}
+
+.newsCard-title {
+  display: inline-block;
+  width: 400rpx;
 }
 
 .newsCard-footer {
-   height: 50rpx;
-   display: flex;
-   flex-direction: row;
-}
-
-.share {
-  width: 20rpx;
-  height: 20rpx;
+  font-size: 10rpx;
+  padding: 0
 }
