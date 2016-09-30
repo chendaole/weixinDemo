@@ -74,26 +74,51 @@ page {
 }
 
 /**templates-card**/
+
 .newsCard {
-   display: flex;
-   flex-direction: column;
-   white-space: nowrap;
-   max-height: 220rpx;
-   min-height: 220rpx;
-   margin: 10rpx;
-   padding: 10rpx;
-   border-bottom: 1px solid #D0D5D8;
+  display: block;
+  margin: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #D0D5D8;
 }
 
 .newsCard-body { 
+  display: flex;
+  justify-content: space-between;
 }
 
 .newsCard-title {
-  display: inline-block;
-  width: 400rpx;
+  flex: 1;
+  text-align: left;
+  margin-left: 10rpx;
+}
+
+.newsCard-image {
+  padding-right: 10rpx;
 }
 
 .newsCard-footer {
-  font-size: 10rpx;
-  padding: 0
+  display: flex;
+  font-size: 20rpx;
+  margin-top: 10rpx;
+}
+
+.newsCard-from {
+  margin-left: 0rpx;
+}
+
+.newsCard-time {
+  margin-left: 20rpx;
+}
+
+.newsCard-time {
+  margin-left: 20rpx;
+}
+
+.newsCard-hot {
+  margin-left: 20rpx;
+}
+
+.newsCard-share {
+  margin-left: 20rpx;
 }
