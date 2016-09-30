@@ -1,0 +1,65 @@
+.containner {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    display: block;
+    font-size: 40rpx;
+    font-weight: bold;
+    padding: 30rpx;
+}
+
+.share {
+    display: block;
+    width: 100%;
+    height: 80rpx;
+    margin-top: 20rpx;
+}
+.share-frame {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    font-size: 30rpx;
+    font-weight: normal;
+    align-items: center;
+}
+
+.share-img {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 30rpx;
+    background-color: orange;
+}
+
+.share-name-frame {
+    display: inline;
+    margin-left: 20rpx;
+}
+
+.share-name {
+    display: block;
+}
+
+.share-time {
+    display: block;
+    font-size: 20rpx;
+    margin-left: 5rpx;
+}
+
+.share-bt {
+    width: 120rpx;
+    height: 48rpx;
+    font-size: 20rpx;
+    text-align: center;
+    margin-top: 20rpx;
+    margin-right: 0rpx;
+    background-color: #0296d9;
+    color: white;
+}
+
+.content {
+    background-color: white;
+    font-weight: normal;
+    font-size: 30rpx;
+}

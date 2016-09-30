@@ -1,3 +1,24 @@
-<view>
-  <text>信息页</text>
+<view class="containner"> 
+  <view class="title">
+     <text>
+        微信大号现形记:刷量工具失灵，部分公众号阅读量缩水50倍
+     </text>
+  <view>
+  <view class="share">
+    <view class="share-frame">
+      <image class="share-img"></image>
+      <view class="share-name-frame">
+        <text class="share-name">澎湃新闻官方</text>
+        <text class="share-time">09-29 19:34</text>
+      </view>
+      <button class="share-bt">+ 关注</button>
+    </view>
+  <view>
+  <view class="content">
+    <text>
+      微信公众号刷单工具坏了，用户们发现一堆原来都在裸泳。
+         9月28日晚间，“公号刷量工具坏了”的消息，给了众多所谓的“大V”级微信公众号现出原形。
+        9月29日一早，就有用户发现，很多微信“大号”平时轻松达到数万阅读量的推送文章，点击量甚是惨淡，都徘徊在三位数、四位数。
+    </text>
+  </view>
 </view>
