@@ -1,15 +1,17 @@
 <template name="newsCard">
   <view class="newsCard">
-     <navigator class="newsCard-body" url="/pages/newsContent/newsContent">
+    <navigator url="/pages/newsContent/newsContent">
+     <view class="newsCard-body">
         <text class="newsCard-title">{{title}}</text>
-        <image src="{{url}}" mode="scaleToFill" style="height: 150rpx; width: 300rpx;"></image>
-     </navigator>
-     <view class="newsCard-footer">
-         <image src="{{footer.iconUrl}}" mode="scaleToFill" style="height: 10rpx; width: 20rpx"></image>
-         <text>来自：{{footer.from}}</text>
-         <text>时间：{{footer.time}}</text>
-         <text>热度：{{footer.hotspot}}</text>
-         <icon class="share" type="info" size="23" data-key="{{key}}" catchtap="handleShareTap">分享</icon>
+        <image class="newsCard-image" src="{{footer.iconUrl}}" mode="scaleToFill" style="height: 150rpx; width: 300rpx;"></image>
      </view>
+   </navigator>
+   <view class="newsCard-footer">
+     <image src="{{footer.iconUrl}}" mode="scaleToFill" style="height: 10rpx; width: 20rpx"></image>
+     <text class="newsCard-from">来自：{{footer.from}}</text>
+     <text class="newsCard-time">时间：{{footer.time}}</text>
+     <text class="newsCard-hot">热度：{{footer.hotspot}}</text>
+     <icon class="newsCard-share" type="info" size="15" data-key="{{key}}" catchtap="handleShareTap">分享</icon>
+   </view>
   </view>
 </template>

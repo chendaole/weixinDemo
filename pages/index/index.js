@@ -4,7 +4,7 @@ var netApi = require('../../utils/netApi.js');
 var app = getApp();
 Page({
   data:{
-    hidden : false,
+    hidden : true,
     category: [],
     carousel : {
       indicatorDots: true,
